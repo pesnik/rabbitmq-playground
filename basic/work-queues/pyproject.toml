@@ -20,6 +20,11 @@ producer = 'rabbitmq_work_queues.producer:main'
 consumer = 'rabbitmq_work_queues.consumer:main'
 
 
+[tool.poetry.group.dev.dependencies]
+isort = "^6.0.0"
+flake8 = "^7.1.1"
+black = "^25.1.0"
+
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
