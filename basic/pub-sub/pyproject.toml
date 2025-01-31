@@ -1,0 +1,29 @@
+[project]
+name = "rabbitmq-pub-sub"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "rhasanm",email = "hasanrakibul.masum@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pika (>=1.3.2,<2.0.0)",
+    "argparse (>=1.4.0,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "rabbitmq_pub_sub", from = "src"}]
+
+[tool.poetry.scripts]
+producer = "rabbitmq_pub_sub.producer:main"
+consumer = "rabbitmq_pub_sub.consumer:main"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+isort = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

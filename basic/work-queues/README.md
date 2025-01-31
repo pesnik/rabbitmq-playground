@@ -27,7 +27,7 @@ channel.basic_publish(exchange='',
                         ))
 ```
 
-# Fair Dispatch
+## Fair Dispatch
 By default RabbitMQ will do round-robin dispatch. If we use the Channel#basic_qos
 method with `prefetch_count=1`, then RabbitMQ won't give more than one message to a
 worker i.e until a worker processed and acknowledged the previous one, don't dispatch
