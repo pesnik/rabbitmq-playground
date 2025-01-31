@@ -12,12 +12,12 @@ def main():
         )
         channel = connection.channel()
 
-        channel.exchange_declare(exchange='logs', exchange_type='fanout')
+        channel.exchange_declare(exchange="logs", exchange_type="fanout")
 
         result = channel.queue_declare(queue="", durable=True, exclusive=True)
         queue_name = result.method.queue
 
-        channel.queue_bind(exchange='logs', queue=queue_name)
+        channel.queue_bind(exchange="logs", queue=queue_name)
 
         def callback(ch, method, properties, body):
             response_time = body.count(b".")
