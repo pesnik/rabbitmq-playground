@@ -2,7 +2,7 @@ services:
   rabbitmq:
     build: 
       context: ./rabbitmq
-    container_name: rabbitmq
+    container_name: rabbitmq-playground
     hostname: rabbitmq
     restart: unless-stopped
     environment:
