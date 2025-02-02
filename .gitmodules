@@ -1,0 +1,3 @@
+[submodule "industry-solutions/distributed-commerce"]
+	path = industry-solutions/distributed-commerce
+	url = git@github.com:pesnik/distributed-commerce.git
