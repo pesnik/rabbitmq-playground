@@ -16,6 +16,58 @@ This repository serves as a practical playground for exploring and mastering Rab
 
 ```
 rabbitmq-playground/
+├── deployment/
+│   ├── docker/
+│   │   ├── standalone/
+│   │   │   ├── Dockerfile
+│   │   │   ├── docker-compose.yml
+│   │   │   └── README.md
+│   │   ├── cluster/
+│   │   │   ├── Dockerfile
+│   │   │   ├── docker-compose.yml
+│   │   │   └── README.md
+│   │   └── custom/
+│   │       ├── Dockerfile
+│   │       ├── docker-compose.yml
+│   │       └── README.md
+│   ├── kubernetes/
+│   │   ├── standalone/
+│   │   │   ├── deployment.yaml
+│   │   │   ├── service.yaml
+│   │   │   ├── configmap.yaml
+│   │   │   └── README.md
+│   │   ├── cluster/
+│   │   │   ├── statefulset.yaml
+│   │   │   ├── service.yaml
+│   │   │   ├── configmap.yaml
+│   │   │   ├── pvc.yaml
+│   │   │   └── README.md
+│   │   └── helm/
+│   │       ├── Chart.yaml
+│   │       ├── values.yaml
+│   │       ├── templates/
+│   │       │   ├── deployment.yaml
+│   │       │   ├── service.yaml
+│   │       │   ├── configmap.yaml
+│   │       │   └── pvc.yaml
+│   │       └── README.md
+│   ├── terraform/
+│   │   ├── aws/
+│   │   │   ├── main.tf
+│   │   │   ├── variables.tf
+│   │   │   ├── outputs.tf
+│   │   │   └── README.md
+│   │   ├── gcp/
+│   │   │   ├── main.tf
+│   │   │   ├── variables.tf
+│   │   │   ├── outputs.tf
+│   │   │   └── README.md
+│   │   └── azure/
+│   │       ├── main.tf
+│   │       ├── variables.tf
+│   │       ├── outputs.tf
+│   │       └── README.md
+│   └── README.md
 ├── basic/
 │   ├── hello-world/
 │   ├── work-queues/
